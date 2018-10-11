@@ -1,0 +1,322 @@
+body {
+    background-color: white;
+
+    animation-name: flux;
+    animation-duration: 5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes flux {
+
+  0%{
+    background-color: lightpink;
+  }
+  100%{
+    background-color: white;
+  }
+
+
+}
+
+div {
+    width: 200px;
+    height: 200px;
+
+    margin: 100px;
+
+    display: inline-block;
+
+}
+
+#box1 {
+    /* animation-name: brotate;
+    animation-duration: 3000ms;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; */
+
+
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(-180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#box2{
+    position: relative;
+
+    bottom: 400px;
+
+
+    z-index: 1;
+
+}
+
+
+@keyframes mover {
+
+  0%{
+    transform: translate(0,0);
+  }
+
+  33% {
+    transform: translate(100px, 0);
+  }
+
+  66%{
+    transform: translate(500px, -200px) rotate(-90deg);
+  }
+
+  100%{
+    transform: translate(300px, 700px) rotate(90deg);
+  }
+}
+
+#box3{
+    position: relative;
+
+    bottom: 400px;
+
+
+    z-index: 1;
+
+
+
+}
+
+
+@keyframes mover {
+
+  0%{
+    transform: translate(0,0);
+  }
+
+  33% {
+    transform: translate(100px, 0);
+  }
+
+  66%{
+    transform: translate(500px, -200px) rotate(-90deg);
+  }
+
+  100%{
+    transform: translate(300px, 700px) rotate(90deg);
+  }
+}
+
+
+
+#box4 {
+
+  animation-name: changeBackground;
+  animation-duration: 3s;
+  animation-iteration-count:
+  infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction:
+  alternate-reverse;
+
+}
+
+@keyframes changeBackground {
+  0% {
+
+    border-radius: 0;
+    transform: rotate(0);
+  }
+
+  50% {
+
+  }
+
+  100% {
+
+    border-radius: 50%;
+    transform: rotate(180deg);
+  }
+}
+
+#boxFive {
+  position: relative;
+
+
+  animation: mover 10s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes mover {
+
+  0%{
+    transform: translate(0,0);
+  }
+
+  33% {
+    transform: translate(700px, 0);
+  }
+
+  66%{
+    transform: translate(500px, -200px) rotate(-90deg);
+  }
+
+  100%{
+    transform: translate(300px, 700px) rotate(90deg);
+  }
+}
+
+/* transiton will happen on a :hover */
+#image-1 {
+  position: relative;
+
+
+  animation: mover 10s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes mover {
+
+  0%{
+    transform: translate(0,0);
+  }
+
+  33% {
+    transform: translate(700px, 0);
+  }
+
+  66%{
+    transform: translate(500px, -200px) rotate(-90deg);
+  }
+
+  100%{
+    transform: translate(300px, 700px) rotate(90deg);
+  }
+}
+
+#image-2 {
+  position: relative;
+
+
+  animation-name: shrug;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes shrug {
+  0% {
+      transform: perspective(60px) rotateY(-40deg);
+
+  }
+
+  50% {
+      transform: perspective(300px) rotateY(0);
+      /* backgroud-color: crimson; */
+  }
+
+  100% {
+      transform: perspective(100px) rotateY(40deg);
+
+  }
+}
+
+#box3{
+  position: relative;
+
+  bottom: 400px;
+
+
+  z-index: 1;
+
+
+
+}
+
+
+@keyframes mover {
+
+0%{
+  transform: translate(0,0);
+}
+
+33% {
+  transform: translate(100px, 0);
+}
+
+66%{
+  transform: translate(500px, -200px) rotate(-20deg);
+}
+
+100%{
+  transform: translate(100px, 100px) rotate(20deg);
+}
+}
+
+#image-3:active{
+  transform: skewX(1000deg)
+  rotateY(30deg) rotateX(720deg);
+}
+
+#image-4 {
+  position: relative;
+
+
+  animation: mover 10s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes mover {
+
+  0%{
+    transform: translate(0,0);
+  }
+
+  33% {
+    transform: translate(700px, 0);
+  }
+
+  66%{
+    transform: translate(500px, -200px) rotate(-90deg);
+  }
+
+  100%{
+    transform: translate(300px, 700px) rotate(90deg);
+  }
+}
+
+#image-5 {
+position: relative;
+
+
+animation: mover 10s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes mover {
+
+0%{
+  transform: translate(0,0);
+}
+
+33% {
+  transform: translate(700px, 0);
+}
+
+66%{
+  transform: translate(500px, -200px) rotate(-90deg);
+}
+
+100%{
+  transform: translate(300px, 700px) rotate(90deg);
+}
+}
